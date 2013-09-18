@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Google Font Replacement for Nokia typeface */
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+/* Proper syntax for an @font-face file to avoid the extra URL request
+
+/* @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 1em; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Flexible width images, scales height in proportion */
+img { max-width:100%; height:auto; }
+
+/* ---- Page styles ---- */
+body { background:#F2F2F2; font-family:"Noto Sans", Helvetica, Arial, sans-serif; font-size:1em; }
+
+header, article, footer { display:block; min-width:320px; max-width:760px; width:100%; margin:0 auto; background:#124190; }
+
+/* Header elements */
+#header-wrap { width:100%; background:#124190; height:50px; }
+header { height:50px; }
+header h1 { display:block; width:100px; height:50px; background:url('../images/sprite-sheet.png') no-repeat -110px -143px; text-indent:-9999px; float:left; margin-right:5%;}
+header nav { display:block; width:60%; line-height:50px; float:left; font-size:0.65em; }
+header nav ul li { display:inline-block; float:left; margin-right:7%; }
+header nav ul li a { text-decoration:none; color:#FFF; }
+header nav ul li a:hover { text-decoration:underline; }
+
+header ul.user-settings { display:block; float:right; margin-top:12px; }
+header ul.user-settings li { display:inline-block; float:left; margin-right:20px; background:url('../images/sprite-sheet.png') no-repeat -40px -80px; }
+header ul.user-settings li.settings { background-position:-40px 0px; }
+header ul.user-settings li.help { background-position:-40px -40px; }
+header ul.user-settings li span { display:block; width:25px; height:25px;  }
+
+/* Hide the dropdown navigation menu for layouts larger than 720px */
+header ul.user-settings li.menu { display:none; background:url('../images/sprite-sheet.png') no-repeat -80px -80px; }
+
+/* Main section background */
+article { background:#F2F2F2; }
+
+/* Greeting elements */
+#greeting { margin-top:35px; background:#E1E1DF; }
+#greeting span.welcome-message { display:block; width:98%; height:50px; background:#333; color:#FFF; font-size:1.5em; padding-left:2%; line-height:50px; }
+#greeting .announcement { padding:2%; }
+#greeting .announcement span { display:block; width:50%; font-size:0.65em; text-transform:uppercase; margin-bottom:10px; }
+#greeting .announcement p { font-size:0.9em; }
+#greeting .announcement p a { text-decoration:none; color:#000; }
+#greeting .announcement p a:hover { text-decoration:underline; }
+
+#greeting .announcement p span { display:inline; font-size:inherit; text-transform:none; font-weight:bold; }
+#greeting .announcement .close { float:right; }
+#greeting .announcement .comment span { display:inline-block; width:25px; height:25px; margin:20px 0 0; background:url('../images/sprite-sheet.png') no-repeat -160px -80px; }
+#greeting .announcement ul { float:right; }
+#greeting .announcement ul li { display:inline-block; float:left; margin:20px 0 0 5px; }
+#greeting .announcement ul li span { display:block; width:16px; height:16px; background:url('../images/sprite-sheet.png') no-repeat -160px -40px; margin:0;  }
+#greeting .announcement ul li.active span { background-position:-160px -60px; }
+
+#greeting .announcement a.close span { display:block; width:12px; height:12px; background:url('../images/sprite-sheet.png') no-repeat -19px 0; }
+
+#top { display:block; width:100%; height:300px; background:#FFF; }
+#title-image { float:left; width:50%; height:300px; }
+
+#title-articles { float:left; width:46%; padding:2%; height:270px; position:relative; }
+#title-articles .feed-title { display:block; height:20px; background:#FBF1DF; position:absolute; top:0; left:0; width:100%;  }
+#title-articles .feed-icon { display:inline-block; width:20px; height:100%; background:#F2A227 url('../images/sprite-sheet.png') no-repeat -154px 3px; margin:0; float:left; }
+#title-articles .feed-fav { display:inline-block; width:20px; height:100%; background:url('../images/sprite-sheet.png') no-repeat 0 -37px; float:right; margin:0; }
+#title-articles .platform { display:inline-block; font-size:0.5em; text-transform:uppercase; line-height:20px; color:#F2A227; margin:0 0 0 2%; }
+#title-articles span { display:block; color:#124190; font-size:1.25em; line-height:1.1em; margin:30px 0 10px; }
+#title-articles p { font-size:0.75em; line-height:1.5em; color:#124190; margin-bottom:20px; }
+#title-articles .read-more { display:inline-block; text-transform:uppercase; font-size:1em; font-weight:bold; margin:0; text-decoration:none; color:#124190; width:50%; }
+#title-articles .read-more span { margin:0; background:url('../images/sprite-sheet.png') no-repeat -158px -17px; width:20px; height:20px; display:inline-block; float:left; }
+#title-articles ul { float:right; }
+#title-articles ul li { display:inline-block; float:left; margin:8px 0 0 5px; }
+#title-articles ul li span { display:block; width:20px; height:20px; background:url('../images/sprite-sheet.png') no-repeat -75px -17px; margin:0; }
+#title-articles ul li.active span { background-position:-75px -37px; }
+
+/* My Feed section */
+#my-feeds { margin-top:35px; width:96%; padding:0 2%; height:530px; }
+#my-feeds h2 { font-size:1.5em; text-transform:uppercase; font-weight:bold; float:left; line-height:30px; }
+#my-feeds .view-all { float:left; display:block; width:100px; height:30px; text-align:center; line-height:30px; text-transform:uppercase; text-decoration:none; font-size:0.75em; color:#000; background:url('../images/sprite-sheet.png') no-repeat 0 -125px; margin-left:2%; }
+#my-feeds .controls { float:right; }
+#my-feeds .controls li { display:inline-block; float:left; margin:0 0 0 5px; }
+#my-feeds .controls li span { display:block; width:20px; height:20px; background:url('../images/sprite-sheet.png') no-repeat -75px -17px; margin:0; }
+#my-feeds .controls li.active span { background-position:-75px -37px }
+
+/* My Feed article list styles */
+#my-feeds #article-list { display:block; height:250px; width:100%; clear:both; padding-top:10px; }
+#my-feeds #article-list li { display:inline-block; width:28%; height:202px; margin:0 2% 2% 0; background:#FFF; float:left; position:relative; padding:2%; }
+#my-feeds #article-list li.last { margin:0 0 2% 0; }
+#my-feeds #article-list li a { text-decoration:none; }
+#my-feeds #article-list li a:hover { text-decoration:underline; }
+
+#my-feeds #article-list .feed-title { display:block; height:20px; background:#FBF1DF; position:absolute; top:0; left:0; width:100%;  }
+#my-feeds #article-list .feed-icon { display:inline-block; width:20px; height:100%; background:#F2A227 url('../images/sprite-sheet.png') no-repeat -154px 3px; margin:0; float:left; }
+#my-feeds #article-list .feed-fav { display:inline-block; width:20px; height:100%; background:url('../images/sprite-sheet.png') no-repeat -20px -37px; float:right; margin:0; }
+#my-feeds #article-list .platform { display:inline-block; font-size:0.5em; text-transform:uppercase; line-height:20px; color:#F2A227; margin:0 0 0 2%; }
+#my-feeds #article-list span { display:block; color:#124190; font-size:1em; line-height:1.1em; margin:20px 0 10px; }
+#my-feeds #article-list .thumbnail { position:absolute; left:0; bottom:0; }
+#my-feeds #article-list .redstarfilled { background-position:-20px -17px; }
+#my-feeds #article-list .greenstarfilled { background-position:-20px -57px; }
+#my-feeds #article-list .greenstarhallow { background-position:0 -57px; }
+
+/* Colourway, logo overrides for social platform specific article, Facebook is in original styles as declared above */
+#my-feeds #article-list li.news .feed-title { background:#E4EFE6; }
+#my-feeds #article-list li.news .feed-icon { background:#479654 url('../images/sprite-sheet.png') no-repeat -97px 3px; }
+#my-feeds #article-list li.news .platform { color:#479654; }
+#my-feeds #article-list li.twitter .feed-title { background:#FCE4DD; }
+#my-feeds #article-list li.twitter .feed-icon { background:#E8471D url('../images/sprite-sheet.png') no-repeat 0 0; }
+#my-feeds #article-list li.twitter .platform { color:#E8471D; }
+
+/* Latest stuff section */
+#latest-stuff {  margin-top:35px; width:96%; padding:0 2%; height:780px; }
+#latest-stuff h2 { font-size:1.5em; text-transform:uppercase; font-weight:bold; float:left; line-height:30px; }
+/* Latest stuff dropdown select menu */
+#latest-stuff form { float:right; height:50px; width:170px; }
+#latest-stuff form span { text-transform:uppercase; font-size:0.75em; }
+#latest-stuff form select { width:170px; }
+
+/* Latest stuff 4-column layout styling (for smaller viewports I imagine a 2x2 grid layout for this section) */
+#latest-stuff #latest-articles { display:block; height:250px; width:100%; clear:both; padding-top:10px; }
+#latest-stuff #latest-articles .column-1,
+#latest-stuff #latest-articles .column-2,
+#latest-stuff #latest-articles .column-3,
+#latest-stuff #latest-articles .column-4 { width:22%; padding:0; margin:0 3.6% 0 0; height:100%; background:none;  }
+#latest-stuff #latest-articles .column-4 { margin:0; }
+
+/* Latest stuff articles */
+#latest-stuff #latest-articles li { display:inline-block; width:100%; margin:0 0 16% 0; background:#FFF; float:left; position:relative; padding:0; }
+#latest-stuff #latest-articles li.last { margin:0 0 2% 0; }
+#latest-stuff #latest-articles .feed-title { display:block; height:20px; background:#FBF1DF; position:absolute; top:0; left:0; width:100%;  }
+#latest-stuff #latest-articles .feed-icon { display:inline-block; width:20px; height:100%; background:#F2A227 url('../images/sprite-sheet.png') no-repeat -154px 3px; margin:0; float:left; }
+#latest-stuff #latest-articles .feed-fav { display:inline-block; width:20px; height:100%; background:url('../images/sprite-sheet.png') no-repeat -20px -37px; float:right; margin:0; }
+#latest-stuff #latest-articles .platform { display:inline-block; font-size:0.5em; text-transform:uppercase; line-height:20px; color:#F2A227; margin:0 0 0 2%; }
+#latest-stuff #latest-articles span { display:block; color:#124190; font-size:0.85em; line-height:1.1em; margin:30px 10px 10px; }
+#latest-stuff #latest-articles p { display:block; margin:0 10px 10px; font-size:0.5em; color:#B0B0B0; }
+
+/* Colourway, logo overrides for social platform specific article, Facebook is in original styles as declared above */
+#latest-stuff #latest-articles li.news .feed-title { background:#E4EFE6; }
+#latest-stuff #latest-articles li.news .feed-icon { background:#479654 url('../images/sprite-sheet.png') no-repeat -97px 3px; }
+#latest-stuff #latest-articles li.news .platform { color:#479654; }
+#latest-stuff #latest-articles li.twitter .feed-title { background:#FCE4DD; }
+#latest-stuff #latest-articles li.twitter .feed-icon { background:#E8471D url('../images/sprite-sheet.png') no-repeat 0 0; }
+#latest-stuff #latest-articles li.twitter .platform { color:#E8471D; }
+
+#latest-stuff #latest-articles .redstarfilled { background-position:-20px -17px; }
+#latest-stuff #latest-articles .redstarhallow { background-position:0 -17px; }
+#latest-stuff #latest-articles .greenstarfilled { background-position:-20px -57px; }
+#latest-stuff #latest-articles .greenstarhallow { background-position:0 -57px; }
+#latest-stuff #latest-articles .orangestarhallow { background-position:0 -37px; }
+
+#latest-stuff #latest-articles li a { text-decoration:none; }
+#latest-stuff #latest-articles li a:hover { text-decoration:underline; }
+
+/* Footer elements */
+footer { background:#FFF; height:50px; }
+#footer-wrap { width:100%; background:#FFF; height:50px; }
+footer span.logo { display:block; width:70px; height:50px; background:url('../images/nokia-logo-footer.png') no-repeat 0 0; text-indent:-9999px; float:left; margin-right:18%;}
+footer ul { float:left; }
+footer ul li { float:left; display:inline-block; margin-right:25px; font-size:0.65em; line-height:50px; }
+
+footer ul.user-settings { display:block; float:right; margin-top:12px; }
+footer ul.user-settings li { display:inline-block; float:left; margin-right:20px; background:url('../images/sprite-sheet.png') no-repeat -120px -80px; }
+footer ul.user-settings li.settings { background-position:-120px 0px; }
+footer ul.user-settings li.help { background-position:-120px -40px; }
+footer ul.user-settings li span { display:block; width:25px; height:25px;  }
+
+footer ul li a { text-decoration:none; color:#F2F2F2; }
+
+/* ================ Media Queries to fix layout =============== */
+/* Wary of UI guidelines for mobile (be generous for fat thumbs on touch devices) */
+
+@media only screen and (max-width: 762px) {
+	/* Hide the main nav and display the main nav inside a dropdown/off-canvas navigation in the top-right of the page, easier to use on mobile devices */
+	header nav { display:none; }
+	header ul.user-settings li.menu { display:inline-block; }
+	
+	#top { height:220px; }
+	#title-image { display:none; } /* OK, a massively cheap fix I know, will still get loaded on mobile (Would rather crop it shoehow) */
+	#title-articles { float:none; width:96%; } 
+	footer span.logo { margin-right:10%;}
+}
+	
+@media only screen and (max-width: 620px) {
+	#top { height:234px; }
+	footer ul.user-settings { display:none; }
+}
+
+@media only screen and (max-width: 556px) {
+	#latest-stuff #latest-articles span { font-size:0.65em; }
+}
+
+@media only screen and (max-width: 456px) {
+		#top { height:270px; }
+}
+/* --- EOF ---- */

@@ -1,0 +1,490 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Nokia | Connecting People</title>
+<meta name="keywords" content="Nokia, facebook, mobile, etc.">
+<meta name="description" content="Nokia, connecting people, etc.">
+<meta name="author" content="Rob Randell">
+
+<meta name="viewport" content="width=device-width">
+    
+<link href="css/nokia-styles.css" rel="stylesheet" >
+<script src="js/modernizr-2.6.2.min.js"></script>
+    
+</head>
+
+
+<body>
+
+<!-- 
+
+Using % widths, fully flexible layout. 
+Breakpoints used for when the layout breaks, not by device specific dimensions.
+Max-width 760px, min-width 320px, will cover the vast majority mobile devices.
+Sprite sheet to be used for hover states on icons, single request to load all small icons.
+
+Tested in Safari 6.0.5, Chrome 28.0.1500.71, Firefox 12, IE10 and IE9.
+
+-->
+<div id="page">
+
+<!-- Header section, contains nav and h1 elements -->
+<div id="header-wrap">
+
+<header>
+<!-- h1 element for SEO -->
+<h1>Nokia</h1>
+
+<!-- Main navigation -->
+<nav>
+<ul>
+<li><a href="#" title="Categories">Categories</a></li>
+<li><a href="#" title="My Feeds">My Feeds</a></li>
+<li><a href="#" title="Features">Features</a></li>
+<li><a href="#" title="Announcements">Announcements</a></li>
+<li><a href="#" title="Calendar">Calendar</a></li>
+</ul>
+</nav>
+
+<!-- User Settings -->
+<ul class="user-settings">
+<li><a href="#"><span></span></a></li>
+<li class="settings"><a href="#"><span></span></a></li>
+<li class="help"><a href="#"><span></span></a></li>
+<li class="menu"><a href="#"><span></span></a></li>
+
+</ul>
+
+</header>
+
+</div><!-- /header-wrap -->
+
+<!-- Main body -->
+<article>
+
+<!-- Greeting section -->
+<div id="greeting">
+<span class="welcome-message">Hola Simon</span>
+
+<div class="announcement">
+
+<!-- Close button -->
+<a href="#"class="close" title="Close"><span></span></a>
+
+<span>Announcement</span>
+
+<p>Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Viva mus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. <a href="#" title="Read announcement"><span class="bold">Read full announcement</span></a></p>
+
+<!-- Comment button -->
+<a href="#" title="Comment" class="comment"><span></span></a>
+
+<!-- Slider controls -->
+<ul>
+<li class="active"><a href="#"><span></span></a></li>
+<li><a href="#"><span></span></a></li>
+<li><a href="#"><span></span></a></li>
+</ul>
+</div>
+
+</div><!-- /greeting -->
+
+
+<div id="top">
+<!-- Main image -->
+<div id="title-image"><img src="images/main-image.jpg" alt="Adventure is everywhere" ></div>
+
+<div id="title-articles">
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Facebook</span>
+<span class="feed-fav"></span>
+</div><!-- /feed-title -->
+
+<span>Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur</span>
+
+<p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac.</p>
+
+<a href="#" title="Read more" ><span class="read-more"><span></span><p>Read more</p></span></a>
+
+<!-- Slider controls -->
+<ul>
+<li class="active"><a href="#"><span></span></a></li>
+<li><a href="#"><span></span></a></li>
+<li><a href="#"><span></span></a></li>
+</ul>
+
+</div><!-- /title-articles -->
+</div>
+
+
+<div id="my-feeds">
+
+<h2>My Feeds</h2>
+
+<!-- View All button -->
+<a href="#" title="View All"><span class="view-all">View All</span></a>
+
+<!-- Slider controls -->
+<ul class="controls">
+<li><a href="#"><span></span></a></li>
+<li class="active"><a href="#"><span></span></a></li>
+<li><a href="#"><span></span></a></li>
+</ul>
+
+
+<!-- Feed List -->
+<ul id="article-list">
+
+<!-- Facebook class, overrides original colourways, changes background logo position -->
+<li class="facebook">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Facebook</span>
+<span class="feed-fav"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 1"><span>Morbi leo risus porta ac co nsectetur ac vestibulum at eros.</span></a>
+
+<!-- Thumbnails, obsolute positioned to the bottom -->
+<img class="thumbnail" src="images/love-music.jpg" alt="Love Music">
+
+</li>
+
+<!-- Twitter class, overrides original colourways, changes background logo position -->
+<li class="twitter">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Twitter</span>
+<span class="feed-fav redstarfilled"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 2"><span>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span></a>
+
+<img class="thumbnail" src="images/15percent-off.jpg" alt="15% off accessories" >
+
+</li>
+
+<li class="news last">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">News</span>
+<span class="feed-fav greenstarhallow"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 3"><span>Maecenas faucibus mollis interdum.</span></a>
+
+<img class="thumbnail" src="images/ovi-beenthere.jpg" alt="ovi" >
+
+</li>
+
+<li class="twitter">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Twitter</span>
+<span class="feed-fav redstarfilled"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 4"><span>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span></a>
+
+<img class="thumbnail" src="images/fatboy.jpg" alt="fatboy" >
+
+</li>
+
+<li class="news">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">News</span>
+<span class="feed-fav greenstarhallow"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 5"><span>Maecenas faucibus mollis interdum.</span></a>
+
+<img class="thumbnail" src="images/balloons.jpg" alt="balloons" >
+
+</li>
+
+<!-- Last class, removes margin-right -->
+<li class="news last">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">News</span>
+<span class="feed-fav greenstarfilled"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 6"><span>Maecenas faucibus mollis interdum.</span></a>
+
+<img class="thumbnail" src="images/man-saucer.jpg" alt="photo" >
+
+</li>
+</ul>
+
+</div><!-- /my-feeds -->
+
+<div id="latest-stuff">
+<h2>Latest Stuff</h2>
+
+<!-- Filter menu, could use Quicksand plugin -->
+<form>
+<span>Sort by</span>
+
+<select>
+<option value="newest" selected>Newest first</option>
+<option value="popular">Most popular</option>
+</select>
+</form>
+
+<!-- Latest stuff list -->
+
+<ul id="latest-articles">
+
+<!-- Four column layout -->
+<li class="column-1">
+
+<!-- Articles list for column 1 -->
+<ul>
+
+<li>
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Facebook</span>
+<span class="feed-fav"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 1"><span>Maecenas sed diam eget risus varius blandit sit</span></a>
+
+<p>Posted 23/03/2013</p>
+
+<img class="thumbnails" src="images/latest-1.jpg" alt="latest" >
+
+</li>
+
+<li class="twitter">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Twitter</span>
+<span class="feed-fav redstarhallow"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 2"><span>Etiam porta sem male suada magna mol lis</span></a>
+
+<p>Posted 23/03/2013</p>
+
+<img class="thumbnails" src="images/latest-2.jpg" alt="latest" >
+
+</li>
+
+<li class="news">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">News</span>
+<span class="feed-fav greenstarhallow"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 3"><span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum</span></a>
+
+<p>Posted 23/03/2013</p>
+
+</li>
+
+</ul>
+
+</li>
+
+<li class="column-2"><!-- column-2 -->
+
+<!-- Articles list for column 2 -->
+<ul>
+
+<li class="twitter">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Twitter</span>
+<span class="feed-fav redstarfilled"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 4"><span>Etiam porta sem male suada magna mol lis</span></a>
+
+<p>Posted 23/03/2013</p>
+
+<img class="thumbnails" src="images/latest-3.jpg" alt="latest" >
+
+</li>
+
+<li class="news">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">News</span>
+<span class="feed-fav greenstarfilled"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 5"><span>Integer posuere erat a ante venenatis dapibus</span></a>
+
+<p>Posted 23/03/2013</p>
+
+<img class="thumbnails" src="images/latest-4.jpg" alt="latest" >
+
+</li>
+
+</ul>
+
+</li><!-- /column-2 -->
+
+
+<li class="column-3"><!-- column-3 -->
+
+<!-- Articles list for column 3 -->
+<ul>
+
+<li class="news">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">News</span>
+<span class="feed-fav greenstarhallow"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 6"><span>Aenean eu leo quam. Pel lente sque ornare sem la</span></a>
+
+<p>Posted 23/03/2013</p>
+
+<img class="thumbnails" src="images/latest-5.jpg" alt="latest" >
+
+</li>
+
+<li>
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Facebook</span>
+<span class="feed-fav orangestarhallow"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 7"><span>Etiam porta sem male suada magna mol lis</span></a>
+
+<p>Posted 23/03/2013</p>
+
+<img class="thumbnails" src="images/latest-6.jpg" alt="latest" >
+
+</li>
+
+<li class="twitter">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Twitter</span>
+<span class="feed-fav redstarhallow"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 8"><span>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit</span></a>
+
+<p>Posted 23/03/2013</p>
+
+</li>
+
+</ul>
+
+</li><!-- /column-3 -->
+
+<li  class="column-4"><!-- column-4-->
+
+<!-- Articles list for column 4 -->
+<ul>
+
+<li class="twitter">
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Twitter</span>
+<span class="feed-fav redstarhallow"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 9"><span>Aenean lacinia bibendum nulla sed consectetur</span></a>
+
+<p>Posted 23/03/2013</p>
+
+<img class="thumbnails" src="images/latest-7.jpg" alt="latest" >
+
+</li>
+
+<li>
+
+<div class="feed-title">
+<span class="feed-icon"></span>
+<span class="platform">Facebook</span>
+<span class="feed-fav orangestarhallow"></span>
+</div><!-- /feed-title -->
+
+<a href="#" title="Article 10"><span>Etiam porta sem male suada magna mol lis</span></a>
+
+<p>Posted 23/03/2013</p>
+
+<img class="thumbnails" src="images/latest-8.jpg" alt="latest" >
+
+</li>
+
+</ul>
+
+</li><!-- /column-4 -->
+
+</ul><!-- /end of the 4 column layout -->
+
+
+</div><!-- /latest-stuff -->
+
+</article><!-- /end of main content section -->
+
+<!-- Footer section -->
+<div id="footer-wrap">
+<footer>
+<span class="logo">Nokia</span>
+
+<ul>
+<li><a href="#" title="Press">Press</a></li>
+<li><a href="#" title="Privacy">Privacy</a></li>
+<li><a href="#" title="Cookies">Cookies</a></li>
+<li><a href="#" title="Invent with Nokia">Invent with Nokia</a></li>
+<li><a href="#" title="Terms">Terms</a></li>
+<li><a href="#" title="Contact">Contact</a></li>
+</ul>
+
+<!-- User Settings -->
+<ul class="user-settings">
+<li><a href="#"><span></span></a></li>
+<li class="settings"><a href="#"><span></span></a></li>
+<li class="help"><a href="#"><span></span></a></li>
+
+</ul>
+
+</footer>
+
+</div><!-- /footer-wrap -->
+
+</div><!-- /page -->
+
+</body>
+</html>
+
+<!-- Google jQuery library, using more stable version -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!-- Empty script -->
+<script src="js/scripts.js"></script>
+
+<!-- EOF -->
